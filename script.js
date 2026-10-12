@@ -1,5 +1,5 @@
-const navLinks = [...document.querySelectorAll('.nav-link')];
-const sections = [...document.querySelectorAll('main section[id]')];
+// const navLinks = [...document.querySelectorAll('.nav-link')];
+// const sections = [...document.querySelectorAll('main section[id]')];
 
 // const updateActiveNav = () => {
 //   const current = sections.reduce((visibleSection, section) => {
