@@ -51,8 +51,10 @@ h1 em, .about-title em, .contact h2 em { font-family: var(--serif); font-weight:
 .caption-arrow { font-size: 17px; }
 .spark { color: var(--red); font-size: 19px; }
 .marquee-band { overflow: hidden; padding: 19px 0 17px; color: var(--paper); background: var(--red); transform: rotate(-1.2deg) scale(1.02); }
-.marquee-track { display: flex; justify-content: space-around; align-items: center; gap: 32px; min-width: max-content; font-size: 11px; font-weight: 700; letter-spacing: .18em}
+.marquee-track { display: flex; width: max-content; font-size: 11px; font-weight: 700; letter-spacing: .18em; animation: marquee-scroll 24s linear infinite; }
+.marquee-group { display: flex; flex: none; align-items: center; gap: 32px; padding-right: 32px; }
 .marquee-track b { font-size: 18px; font-weight: 400; }
+@keyframes marquee-scroll { to { transform: translateX(-50%); } }
 .work { padding: 145px 0 130px; }
 .section-heading { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
 .section-note { margin: 0; color: var(--muted); font-size: 12px; }
